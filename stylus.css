@@ -290,7 +290,7 @@ body:has(.dark) {
   #outer-body {
     width: fit-content;
     margin: 10px;
-    padding: 5px;
+    padding: 20px;
   }
 
   header {
@@ -351,6 +351,7 @@ body:has(.dark) {
     margin: 20px;
   }
 }
+
 
 
 
