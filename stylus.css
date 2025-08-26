@@ -80,8 +80,8 @@ nav a:hover {
 } */
 /*******************home*************/
 #self_portrait {
-  height: 12em;
-  width: 12em;
+  height: 192px;
+  width: 192px;
 }
 .image {
   float: left;
@@ -322,8 +322,8 @@ body:has(.dark) {
   }
 
   #self_portrait {
-    height: 12em;
-    width: 12em;
+    height: 192px;
+    width: 192px;
   }
 
   #gate {
@@ -351,3 +351,4 @@ body:has(.dark) {
     margin: 20px;
   }
 }
+
