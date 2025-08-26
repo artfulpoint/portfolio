@@ -280,7 +280,7 @@ body:has(.dark) {
 
 /************************responsiveness*********************/
 
-@media screen and (min-width: 200px) and (max-width: 541px) {
+@media screen and (min-width: 100px) and (max-width: 541px) {
   body {
     margin-top: 0px;
     background: white;
@@ -351,4 +351,5 @@ body:has(.dark) {
     margin: 20px;
   }
 }
+
 
