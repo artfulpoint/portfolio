@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>portofolio</title>
+  </head>
+  <body>
+    <!-- <img height="100vh" width="100vw" src="images/self_image.JPG" alt="" /> -->
+    <header>
+      <nav>
+        <ul>
+          <li>creative exploration</li>
+          <li>projects</li>
+          <li>soft skills</li>
+          <li>technical skills</li>
+          <li>education</li>
+        </ul>
+
+        <span>
+          <a href="#contact">Contact Me</a>
+        </span>
+      </nav>
+      <div
+        style="
+          padding: 2em;
+          background-image: url(images/self_image.JPG);
+          background-size: 30%;
+          margin: 2em;
+          width: 90%;
+          height: 33em;
+          background-repeat: no-repeat;
+          background-position: left;
+        "
+      >
+        <div id="main-heading">
+          <p>Portfolio</p>
+          <h6>of</h6>
+        </div>
+        <h1 id="name">
+          <span id="first-name"> ROHIT </span>
+          <br />
+          <span id="last-name">GROVER</span>
+          <span id="profession"> A Web Developer </span>
+        </h1>
+      </div>
+    </header>
+
+    <div id="main">
+      <!-- <div id="self_image">
+        <img src="images/self_image.JPG" style="height: 100px; width: 200px" alt="" />
+      </div> -->
+      <div class="box" id="box1">
+        <h2 class="inner-heading">EDUCATION</h2>
+        <h3>Bachelors of Technology</h3>
+        <span>Computer Science Engineering, &nbsp; Dronacharya college of engineering</span>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="inner-heading">Creative Exploration</h2>
+        <span
+          >I've interest in manifesting ideas into reality and my zest for coding is one of the many
+          ways to do. Keen to use my skills and work with professionals.</span
+        >
+      </div>
+      <div class="box" id="box3">
+        <h2 class="inner-heading">Projects</h2>
+
+        <ul>
+          <li>Resume</li>
+        </ul>
+      </div>
+      <div class="box" id="box4">
+        <h2 class="inner-heading">Technical Skills</h2>
+        <ul>
+          <li>HTML</li>
+        </ul>
+      </div>
+      <div class="box" id="box5">
+        <h2 class="inner-heading">Soft Skills</h2>
+        <ul>
+          <li>HTML</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div id="footer-packing">
+        <div>
+          <a href="mailto:rohit.grover.3096@gmail.com">
+            <img src="images/email-dark.png" alt="" /> rohit.grover.3096@gmail.com
+          </a>
+        </div>
+        <div id="contact">
+          <a href="tel:+91-8447091721"><img src="images/phone-dark.png" alt="" /> +91-8447091721</a>
+        </div>
+        <div><img src="images/location-dark.png" alt="" /> Gurugram, Haryana-122001</div>
+        <div style="color: chocolate">
+          <p><span>&copy; 2025 portfolio</span> | <span> Designed by Rohit Grover</span></p>
+        </div>
+      </div>
+      <div class="main">
+        <aside>
+          <ul id="internal-navigation">
+            <li><a href="#creative-experience" onclick="change(this)">Creative Experience</a></li>
+            <li><a href="#education" onclick="change(this)">Education</a></li>
+            <li><a href="#projects" onclick="change(this)">Projects</a></li>
+            <li><a href="#skills" onclick="change(this)">Skills</a></li>
+            <li><a href="#extracurricular" onclick="change(this)">Extra Curricular</a></li>
+          </ul>
+        </aside>
+        <article class="check">
+          <div id="creative-experience" class="no-show">
+            I've interest in manifesting ideas into reality and my zest for coding is one of the
+            many ways to do so. I have no professional experience and despirate to use my skills to
+            work with professionals.
+          </div>
+          <div id="education" class="no-show">
+            <h3>Graduation</h3>
+            <h5>Bachelors of Technology</h5>
+            <span>Computer Science Engineering, &nbsp; Dronacharya college of engineering</span>
+            <h3>Schooling</h3>
+            <h5>Sh. S. N. Sidheshwar Public School</h5>
+          </div>
+          <div id="projects" class="no-show">
+            <ul>
+              <li>Resume</li>
+            </ul>
+          </div>
+          <div id="skills" class="no-show">
+            <ul>
+              <li>HTML</li>
+            </ul>
+          </div>
+          <div id="extracurricular" class="no-show">
+            <ul>
+              <li>Cooking</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </footer>
+  </body>
+</html>

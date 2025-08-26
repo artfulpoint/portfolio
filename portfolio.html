@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylus.css" />
+    <script src="script.js"></script>
+    <title>portofolio</title>
+  </head>
+  <!-- onload="loading()"-->
+  <body>
+    <div class="light" id="outer-body">
+      <header id="header">
+        <span id="logo">
+          <ul>
+            <li>
+              <h1>
+                <a href="/portfolio.html"> Portfolio </a>
+              </h1>
+            </li>
+          </ul>
+        </span>
+        <span id="theme">
+          <span>dark</span>
+
+          <img
+            style="text-decoration: none; vertical-align: middle"
+            id="toggle-btn"
+            src="images/light.png"
+            onclick="clicked(this)"
+          />
+
+          <span>light</span>
+        </span>
+        <div style="clear: both"></div>
+        <!-- <nav>
+          <ul>
+            <li><a class="nav-link" id="link1" href="/portfolio.html">Home</a></li>
+            <li>
+              <a class="nav-link" id="link2" onclick="scrolling(this)" href="#about">About</a>
+            </li>
+            <li><a class="nav-link" id="link3" href="#skills">Skills</a></li>
+            <li><a class="nav-link" id="link4" href="#works">Works</a></li>
+            <li><a class="nav-link" id="link5" href="#contact">Contact</a></li>
+          </ul>
+        </nav> -->
+      </header>
+      <div id="inner-body">
+        <div id="home">
+          <div id="gate">
+            <img id="self_portrait" src="images/self_image.JPG" alt="self_portrait" />
+            <h1 id="greetings">
+              <span id="name">Hi! I am Rohit Grover.</span>
+              <br />
+              <span id="profession"> A Junior Web Developer </span>
+            </h1>
+          </div>
+          <div id="note">
+            <p style="margin: auto; width: 50%">
+              with curiosity and love for art and for coding, I am keen to learn and innovate the
+              designing and coding skills and get better. And make a mark in the world of web
+              development.
+            </p>
+            <span class="btn" id="contact-btn">
+              <a href="#contact"> Contact Me </a>
+            </span>
+          </div>
+        </div>
+
+        <hr />
+        <div id="about">
+          <h2 class="title">About Me</h2>
+          <p>
+            I'm a junior web developer with unwavering passion for crafting user-friendly and
+            visually appealing websites.
+          </p>
+          <div id="container">
+            <img class="image" src="images/IMG_145957.png" alt="self_portrait_anime" />
+            <div id="about_content">
+              <h4>Get To Know Me</h4>
+              <p>
+                My journey in this dynamic field started with the fascination with the intricacies
+                of web development and design, and it has since evolved into a commitment to
+                creating seamless, user-friendly online experiences.
+              </p>
+              <p>
+                I thrive on thechallenges, and with a toolbox filled with HTML, CSS and JavaScript,
+                and more, I'm ready to tackle any project that comes my way.
+              </p>
+              <p>
+                when I'm not immersed into the world of web development, you can find me staying
+                up-to-date with the latest industry trends, and with experimenting with new
+                frameworks.
+              </p>
+              <p>
+                I'm here to learn, innovate, evolve and make a meaningful contribution to the
+                digital landscape, and I'm excited to connect and collaborate with the like-minded
+                individuals who share my enthusiasm for web devlopment.
+              </p>
+              <span class="btn">
+                <a href="#">Download Resume</a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div id="skills">
+          <h3 class="title">Skills</h3>
+          <p>
+            I'm Well-versed in frontend and backend development, with a strong foundation in design,
+            and profiency in Microsoft technologies.
+          </p>
+          <!-- <img src="images/web-developer.jpg" alt="" height="200px" width="200px" /> -->
+          <img
+            class="skills-image"
+            src="images/html.jpg"
+            title="HTML(HyperText Markup Language)"
+            alt="HTML(HyperText Markup Language)"
+          />
+          <img
+            class="skills-image"
+            src="images/css.png"
+            title="CSS(Cascading Style Sheet)"
+            alt="CSS(Cascading Style Sheet)"
+          />
+        </div>
+        <hr />
+        <div id="works">
+          <h3 class="title">Works</h3>
+          <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div id="contact">
+          <h3 class="title">Contact</h3>
+          <div id="form-container">
+            <form id="form" name="form" method="post" action="write()" autocomplete>
+              <fieldset for="form">
+                <legend>Contact Me</legend>
+                <p>
+                  <label
+                    >Name
+                    <input type="text" name="name" id="name" placeholder="Your Name" />
+                  </label>
+                </p>
+                <p>
+                  <label
+                    >E-mail
+                    <input type="email" id="mailer" placeholder="Your Email" />
+                  </label>
+                </p>
+                <p>
+                  <label
+                    >Subject
+                    <input type="text" name="subject" id="subject" placeholder="Subject" />
+                  </label>
+                </p>
+                <p>
+                  <label
+                    >Message
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  </label>
+                </p>
+                <p>
+                  <input type="submit" value="Submit" />
+                </p>
+              </fieldset>
+            </form>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div id="footer-packing">
+          <div id="email">
+            <a href="mailto:rohit.grover.3096@gmail.com">
+              <img src="images/email.png" alt="" /> rohit.grover.3096@gmail.com
+            </a>
+          </div>
+          <div id="phone">
+            <a href="tel:+91-8447091721"><img src="images/phone.png" alt="" /> +91-8447091721</a>
+          </div>
+          <div id="location"><img src="images/location.png" alt="" /> Gurugram, Haryana-122001</div>
+          <div style="color: chocolate">
+            <p><span>&copy; 2025 portfolio</span> | <span> Designed by Rohit Grover</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+/***********************browser main body*************/
+body {
+  margin-top: 0px;
+  background: white;
+  color: black;
+}
+
+/****************outer body************/
+#outer-body {
+  box-shadow: 1px 1px 14px 1px;
+  width: 70%;
+  margin: auto;
+  padding: 5px;
+}
+
+/*********************header****************/
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+#logo {
+  float: left;
+}
+
+#logo ul {
+  list-style: none;
+  margin-block-start: 0;
+}
+
+#logo h1 {
+  margin-block-start: 0;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #5f9ea0;
+  font-family: cursive;
+}
+
+#theme {
+  float: right;
+  margin-top: 16px;
+}
+
+#toggle-btn {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+#theme span {
+  font-weight: bolder;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  width: auto;
+  background: #73f0b4;
+}
+
+nav a {
+  cursor: pointer;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  background-color: #acd8c3;
+}
+
+/************************inner body******************/
+/* #inner-body {
+} */
+/*******************home*************/
+#self_portrait {
+  height: 12em;
+  width: 12em;
+}
+.image {
+  float: left;
+  height: 12em;
+  width: 12em;
+}
+
+#gate #greetings {
+  padding: 1em 0;
+  margin-right: 1em;
+  margin-left: 1em;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+#note {
+  clear: both;
+  text-align: center;
+}
+
+#contact-btn {
+  padding: 4px 0;
+}
+
+.btn {
+  margin: 16px 0;
+  display: inline-block;
+}
+
+#contact-btn a {
+  border-radius: 16px;
+  background: #76b798;
+  padding: 7px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#contact-btn a:hover {
+  background: #73f0b4;
+}
+/************************horizontal line****************/
+hr {
+  border: 1px solid #d0f637;
+}
+/**********************about*******************/
+#about {
+  clear: both;
+}
+
+.title {
+  color: #5f9ea0;
+  text-align: center;
+}
+
+#about img {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+#about_content a {
+  text-decoration: none;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 16px;
+}
+/*****************************skills*****************/
+.skills-image {
+  height: 100px;
+  width: 100px;
+  vertical-align: top;
+}
+
+#skills p {
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+}
+/******************work*************/
+#works ul {
+  list-style-type: none;
+}
+
+#works a {
+  color: black;
+}
+
+#works a:hover {
+  color: blue;
+}
+/****************contact***********/
+#contact #form {
+  width: 50%;
+  margin: auto;
+}
+
+fieldset {
+  border: 5px double black;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+
+#form {
+  box-shadow: 1px 1px 10px 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#form label,
+input {
+  display: block;
+  border-radius: 5px;
+}
+label {
+  margin-top: 15px;
+  display: block;
+}
+
+input {
+  background: #e3e3e3;
+  border: 1px solid black;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #e3e3e3;
+}
+
+/******************footer****************/
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer img {
+  height: 16px;
+}
+/******************dark theme*************/
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.dark #outer-body {
+  width: 70%;
+  margin: auto;
+  box-shadow: 1px 1px 14px 1px white;
+  padding: 5px;
+}
+
+.dark header {
+  position: sticky;
+  top: 0;
+  background: black;
+}
+
+.dark #toggle-btn {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+body:has(.dark) {
+  margin-top: 0px;
+  background: black;
+  color: white;
+}
+
+.dark #works a {
+  color: white;
+}
+
+.dark fieldset {
+  border: 5px double white;
+}
+
+.dark input {
+  background: #e3e3e3;
+  border: 1px solid white;
+}
+
+.dark footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.dark footer img {
+  height: 16px;
+}
+
+/************************responsiveness*********************/
+
+@media screen and (min-width: 200px) and (max-width: 541px) {
+  body {
+    margin-top: 0px;
+    background: white;
+    color: black;
+  }
+
+  #outer-body {
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+  }
+
+  header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+
+  #inner-body {
+    width: fit-content;
+  }
+
+  #logo ul {
+    list-style: none;
+    margin-block-start: 0;
+    padding: 0;
+  }
+
+  #theme {
+    float: right;
+    margin-top: 16px;
+    margin-left: 48px;
+  }
+
+  hr {
+    border: 1px solid #d0f637;
+    width: 20%;
+  }
+
+  #self_portrait {
+    height: 12em;
+    width: 12em;
+  }
+
+  #gate {
+    text-align: center;
+  }
+
+  #gate #greetings {
+    padding: 1em 0;
+    margin-right: 1em;
+    margin-left: 1em;
+    width: fit-content;
+    float: left;
+    text-align: center;
+  }
+
+  textarea {
+    display: block;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+  }
+
+  #contact #form {
+    width: 70%;
+    margin: 20px;
+  }
+}
