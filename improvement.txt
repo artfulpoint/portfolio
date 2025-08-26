@@ -1,6 +1,0 @@
-//resume download link
-// contact form submit link button
-//header sticky and on clicking anchor,jumping to page ut content hiding behind header
-
-540
-830
