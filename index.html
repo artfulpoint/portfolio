@@ -9,6 +9,7 @@
   </head>
   <!-- onload="loading()"-->
   <body>
+    
     <div class="light" id="outer-body">
       <header id="header">
         <span id="logo">
@@ -194,9 +195,14 @@
           </div>
         </div>
       </footer>
+      <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById("year").textContent = currentYear;
+    </script>
     </div>
   </body>
 </html>
+
 
 
 
