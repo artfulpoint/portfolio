@@ -1,3 +1,8 @@
+let currentYear=new Date().getFullYear;
+document.getElementById("year").innerHTML=currentYear;;
+
+
+
 function clicked(e) {
   let theme_name = e.getAttribute("src");
   theme_name = theme_name.replace("images/", "");
@@ -36,3 +41,4 @@ function clicked(e) {
 //   //   let links = document.getElementById("inner-body").addEventListener;
 //   //   links.scrollTo({ top: 125, behavior: "smooth" });
 // }
+
