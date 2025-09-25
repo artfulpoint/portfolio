@@ -68,19 +68,18 @@ function sendmail(e) {
       alert("email is required");
     }
     else{
-      if( subject=="" ){
+        if(!emailRegex.test(from)){
+            alert("enter valid email");
+          }else{      
+          if( subject=="" ){
           alert("subject is required");
-      }
-      else{
+          }
+          else{
 
-        if(message==""){
+              if(message==""){
             alert("message is required");
-        }
-        else{
-          if(!emailRegex.test(from)){
-        alert("enter valid email");
-      }else{
-
+            }
+            else{
         params={name:name,subject:subject,email:from,message:message};
           emailjs.send("service_mer1y3o","template_t8g3b28",params).then(alert("email has been sent"));
           document.getElementById("name").value="";
@@ -130,6 +129,7 @@ function scrolledTo(){
 
   window.scrollTo({ top: height, behavior: "smooth" });
 }
+
 
 
 
