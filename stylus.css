@@ -343,6 +343,7 @@ body:has(.dark) {
     margin-top: 0px;
     background: white;
     color: black;
+    width: fit-content;
   }
 
   #outer-body {
@@ -351,16 +352,16 @@ body:has(.dark) {
     padding: 5px;
   }
 
-  header{
+  nav{
   display:none;
   }
   
-  /* header {
+  header {
     width: 100%;
     position: sticky;
     top: 0;
     background: white;
-  } */
+  }
 
   #inner-body {
     width: fit-content;
@@ -413,5 +414,6 @@ body:has(.dark) {
     margin: 20px;
   }
 }
+
 
 
