@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylus.css" />
-    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "qKpILNXvPUZIRBp0f",
+        });
+      })();
+    </script>
     <title>portofolio</title>
   </head>
-  <!-- onload="loading()"-->
   <body>
-    
     <div class="light" id="outer-body">
       <header id="header">
         <span id="logo">
           <ul>
             <li>
               <h1>
-                <a href="/portfolio/index.html"> Portfolio </a>
+                <a href="/index.html"> Portfolio </a>
               </h1>
             </li>
           </ul>
@@ -34,25 +42,30 @@
           <span>light</span>
         </span>
         <div style="clear: both"></div>
-        <!-- <nav>
+        <nav id="navigation">
           <ul>
-            <li><a class="nav-link" id="link1" href="/portfolio.html">Home</a></li>
+            <li><span class="nav-link active" id="link1" onclick="scrolling(this)">Home</span></li>
             <li>
-              <a class="nav-link" id="link2" onclick="scrolling(this)" href="#about">About</a>
+              <span class="nav-link inactive" id="link2" onclick="scrolling(this)">About</span>
             </li>
-            <li><a class="nav-link" id="link3" href="#skills">Skills</a></li>
-            <li><a class="nav-link" id="link4" href="#works">Works</a></li>
-            <li><a class="nav-link" id="link5" href="#contact">Contact</a></li>
+            <li>
+              <span class="nav-link inactive" id="link3" onclick="scrolling(this)">Skills</span>
+            </li>
+            <li>
+              <span class="nav-link inactive" id="link4" onclick="scrolling(this)">Works</span>
+            </li>
+            <li>
+              <span class="nav-link inactive" id="link5" onclick="scrolling(this)">Contact</span>
+            </li>
           </ul>
-        </nav> -->
+        </nav>
       </header>
       <div id="inner-body">
-        <!--------------------------------- home ----------------------->
-        <div id="home">
+        <div id="home" class="section">
           <div id="gate">
-            <img id="self_portrait" src="images/self_image.webp" alt="self_portrait" />
+            <img id="self_portrait" src="images/self_image.png" alt="self_portrait" />
             <h1 id="greetings">
-              <span id="name">Hi! I am Rohit Grover.</span>
+              <span id="self">Hi! I am Rohit Grover.</span>
               <br />
               <span id="profession"> A Junior Web Developer </span>
             </h1>
@@ -64,22 +77,20 @@
               development.
             </p>
             <span class="btn" id="contact-btn">
-              <a href="#contact"> Contact Me </a>
+              <a onclick="scrolledTo()"> Contact Me </a>
             </span>
           </div>
         </div>
 
         <hr />
-
-        <!--------------------------------- about ----------------------->
-        <div id="about">
+        <div id="about" class="section">
           <h2 class="title">About Me</h2>
           <p>
             I'm a junior web developer with unwavering passion for crafting user-friendly and
             visually appealing websites.
           </p>
           <div id="container">
-            <img class="image" src="images/IMG_145957.webp" alt="self_portrait_anime" />
+            <img class="image" src="images/IMG_145957.png" alt="self_portrait_anime" />
             <div id="about_content">
               <h4>Get To Know Me</h4>
               <p>
@@ -108,8 +119,7 @@
           </div>
         </div>
         <hr />
-        <!--------------------------------- skills ----------------------->
-        <div id="skills">
+        <div id="skills" class="section">
           <h3 class="title">Skills</h3>
           <p>
             I'm Well-versed in frontend and backend development, with a strong foundation in design,
@@ -130,56 +140,65 @@
           />
         </div>
         <hr />
-        <!--------------------------------- works ----------------------->
-        <div id="works">
+        <div id="works" class="section">
           <h3 class="title">Works</h3>
           <ul>
             <li><a href="https://artfulpoint.github.io/portfolio/index.html">Portfolio</a></li>
-            <li><a href="https://artfulpoint.github.io/expressearth/index.html">ExpressEarth Webpage</a></li>
+            <li>
+              <a href="https://artfulpoint.github.io/expressearth/index.html"
+                >ExpressEarth Webpage</a
+              >
+            </li>
           </ul>
         </div>
         <hr />
-        <!--------------------------------- contact form ----------------------->
-        <div id="contact">
+        <div id="contact" class="section">
           <h3 class="title">Contact</h3>
-          <h5 style="text-align:center;">Get In Touch</h5>
           <div id="form-container">
-            <form id="form" name="form" method="post" action="write()" autocomplete>
+            <form id="form" name="form" autocomplete>
               <fieldset for="form">
                 <legend>Contact Me</legend>
                 <p>
                   <label
                     >Name
-                    <input type="text" name="name" id="name" placeholder="Your Name" required />
+                    <input type="text" name="name" id="name" placeholder="Your Name" />
                   </label>
                 </p>
                 <p>
                   <label
                     >E-mail
-                    <input type="email" id="mailer" placeholder="Your Email" required />
+                    <input
+                      type="email"
+                      name="mailer"
+                      id="mailer"
+                      placeholder="Your Email"
+                      pattern=""
+                    />
                   </label>
                 </p>
                 <p>
                   <label
                     >Subject
-                    <input type="text" name="subject" id="subject" placeholder="Subject" required />
+                    <input type="text" name="subject" id="subject" placeholder="Subject" />
                   </label>
                 </p>
                 <p>
                   <label
                     >Message
-                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
                   </label>
                 </p>
                 <p>
-                  <input type="submit" value="Submit" />
+                  <label for="button">
+                    <input type="button" value="Send" onclick="sendmail(this)" />
+                  </label>
                 </p>
               </fieldset>
             </form>
-            <hr />
           </div>
         </div>
       </div>
+      <hr />
 
       <footer>
         <div id="footer-packing">
@@ -197,29 +216,11 @@
           </div>
         </div>
       </footer>
-      <script>
+    </div>
+    <script>
       const currentYear = new Date().getFullYear();
       document.getElementById("year").textContent = currentYear;
     </script>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

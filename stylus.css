@@ -10,7 +10,7 @@ body {
   box-shadow: 1px 1px 14px 1px;
   width: 70%;
   margin: auto;
-  padding: 20px;
+  padding: 5px;
 }
 
 /*********************header****************/
@@ -60,28 +60,38 @@ nav ul {
   justify-content: end;
   width: auto;
   background: #73f0b4;
+  padding: 10px 0;
 }
 
-nav a {
+nav li span {
   cursor: pointer;
   margin: 0 10px;
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: bolder;
+  padding: 10px 0;
 }
 
-nav a:hover {
+nav li span:hover {
   background-color: #acd8c3;
+    color: black;
 }
 
+.active{
+  color: black;
+}
+
+.inactive{
+  color: white;
+}
 /************************inner body******************/
 /* #inner-body {
 } */
 /*******************home*************/
 #self_portrait {
-  height: 192px;
-  width: 192px;
+  height: 12em;
+  width: 12em;
 }
 .image {
   float: left;
@@ -121,6 +131,7 @@ nav a:hover {
 }
 
 #contact-btn a:hover {
+  cursor: pointer;
   background: #73f0b4;
 }
 /************************horizontal line****************/
@@ -174,6 +185,10 @@ hr {
   color: blue;
 }
 /****************contact***********/
+#contact{
+  margin-bottom: 20px;
+}
+
 #contact #form {
   width: 50%;
   margin: auto;
@@ -193,12 +208,29 @@ fieldset {
 
 #form label,
 input {
+ 
   display: block;
   border-radius: 5px;
 }
 label {
   margin-top: 15px;
   display: block;
+}
+input{
+   width: 90%;
+  padding: 10px;
+}
+
+input:focus{
+  background-color: white;
+}
+input[type=submit]{
+margin: auto;
+width: 25%;
+}
+input[type=button]:hover{
+  background-color: #f7f7f7;
+  color: green;
 }
 
 input {
@@ -207,12 +239,18 @@ input {
 }
 
 textarea {
+  font-family: sans-serif;
   display: block;
+  padding: 10px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 90%;
   height: 150px;
   border-radius: 5px;
   background-color: #e3e3e3;
+}
+
+textarea:focus{
+  background-color: white;
 }
 
 /******************footer****************/
@@ -235,7 +273,7 @@ footer img {
   width: 70%;
   margin: auto;
   box-shadow: 1px 1px 14px 1px white;
-  padding: 20px;
+  padding: 5px;
 }
 
 .dark header {
@@ -244,10 +282,25 @@ footer img {
   background: black;
 }
 
+
+
 .dark #toggle-btn {
   height: 32px;
   width: 32px;
   cursor: pointer;
+}
+
+.dark nav li span:hover {
+  background-color: #acd8c3;
+    color: white;
+}
+
+.dark .active{
+  color: white;
+}
+
+.dark .inactive{
+  color: black;
 }
 
 body:has(.dark) {
@@ -268,6 +321,11 @@ body:has(.dark) {
   background: #e3e3e3;
   border: 1px solid white;
 }
+.dark input:focus, .dark textarea:focus{
+  background-color: black;
+  color: white;
+}
+
 
 .dark footer a {
   text-decoration: none;
@@ -290,7 +348,7 @@ body:has(.dark) {
   #outer-body {
     width: fit-content;
     margin: 10px;
-    padding: 20px;
+    padding: 5px;
   }
 
   header {
@@ -322,8 +380,8 @@ body:has(.dark) {
   }
 
   #self_portrait {
-    height: 192px;
-    width: 192px;
+    height: 12em;
+    width: 12em;
   }
 
   #gate {
@@ -343,7 +401,7 @@ body:has(.dark) {
     display: block;
     margin-bottom: 10px;
     height: 50px;
-    width: 100%;
+    width: 90%;
   }
 
   #contact #form {
@@ -351,7 +409,3 @@ body:has(.dark) {
     margin: 20px;
   }
 }
-
-
-
-
