@@ -351,12 +351,16 @@ body:has(.dark) {
     padding: 5px;
   }
 
-  header {
+  header{
+  display:none;
+  }
+  
+  /* header {
     width: 100%;
     position: sticky;
     top: 0;
     background: white;
-  }
+  } */
 
   #inner-body {
     width: fit-content;
@@ -409,4 +413,5 @@ body:has(.dark) {
     margin: 20px;
   }
 }
+
 
