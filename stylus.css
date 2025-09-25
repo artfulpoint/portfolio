@@ -224,7 +224,7 @@ input{
 input:focus{
   background-color: white;
 }
-input[type=submit]{
+input[type=button]{
 margin: auto;
 width: 25%;
 }
@@ -409,3 +409,4 @@ body:has(.dark) {
     margin: 20px;
   }
 }
+
