@@ -3,7 +3,6 @@ const sectionEls= document.querySelectorAll(".section");
 let header = document.getElementById('header');
 let headerHeight = header.offsetHeight;
 let headertop= header.offsetTop;
-let margin=15;
 
 let currentSection = sectionEls[0].id;
 
@@ -14,7 +13,7 @@ function scrollBy(){
 
     let currentPos= window.scrollY;
 
-    if( window.scrollY>=sectionEl.offsetTop-headerHeight-2*margin){
+    if( window.scrollY>=sectionEl.offsetTop-headerHeight){
       currentSection=sectionEl.id;
     }
   });
@@ -129,6 +128,7 @@ function scrolledTo(){
 
   window.scrollTo({ top: height, behavior: "smooth" });
 }
+
 
 
 
