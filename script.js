@@ -13,7 +13,7 @@ function scrollBy(){
 
     let currentPos= window.scrollY;
 
-    if( window.scrollY>=sectionEl.offsetTop && window.scrollY>=sectionEl.offsetHeight){
+    if( window.scrollY>=(sectionEl.offsetTop -headerHeight)){
       currentSection=sectionEl.id;
     }
   });
@@ -128,6 +128,7 @@ function scrolledTo(){
 
   window.scrollTo({ top: height, behavior: "smooth" });
 }
+
 
 
 
