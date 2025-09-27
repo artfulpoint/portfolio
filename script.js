@@ -2,7 +2,7 @@ const nav_links= document.querySelectorAll('.nav-link');
 const sectionEls= document.querySelectorAll(".section");
 let header = document.getElementById('header');
 let headerHeight = header.offsetHeight;
-let headertop= header.offsetTop;
+let margin= 16;
 
 let currentSection = sectionEls[0].id;
 
@@ -13,7 +13,7 @@ function scrollBy(){
 
     let currentPos= window.scrollY;
 
-    if( window.scrollY>=(sectionEl.offsetTop -headerHeight)){
+    if( window.scrollY>=(sectionEl.offsetTop - headerHeight - margin)){
       currentSection=sectionEl.id;
     }
   });
@@ -128,6 +128,7 @@ function scrolledTo(){
 
   window.scrollTo({ top: height, behavior: "smooth" });
 }
+
 
 
 
