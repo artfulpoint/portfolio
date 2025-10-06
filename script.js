@@ -126,8 +126,9 @@ function scrolledTo(){
     window.pageYOffset -
     document.getElementById("header").offsetHeight;
 
-  window.scrollTo({ top: height, behavior: "smooth" });
+  window.scrollTo({ top: height, behavior: "instant" });
 }
+
 
 
 
