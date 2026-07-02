@@ -2,7 +2,8 @@ const nav_links= document.querySelectorAll('.nav-link');
 const sectionEls= document.querySelectorAll(".section");
 let header = document.getElementById('header');
 let headerHeight = header.offsetHeight;
-let margin= 16;
+let headertop= header.offsetTop;
+let margin=16;
 
 let currentSection = sectionEls[0].id;
 
@@ -13,7 +14,7 @@ function scrollBy(){
 
     let currentPos= window.scrollY;
 
-    if( window.scrollY>=(sectionEl.offsetTop - headerHeight - margin)){
+    if( window.scrollY>sectionEl.offsetTop-headerHeight-margin){
       currentSection=sectionEl.id;
     }
   });
@@ -67,25 +68,27 @@ function sendmail(e) {
       alert("email is required");
     }
     else{
-        if(!emailRegex.test(from)){
-            alert("enter valid email");
-          }else{      
+      if(!emailRegex.test(from)){
+        alert("enter valid email");
+      }else{
           if( subject=="" ){
-          alert("subject is required");
+              alert("subject is required");
           }
           else{
 
-              if(message==""){
-            alert("message is required");
+            if(message==""){
+                alert("message is required");
             }
             else{
-        params={name:name,subject:subject,email:from,message:message};
-          emailjs.send("service_mer1y3o","template_t8g3b28",params).then(alert("email has been sent"));
-          document.getElementById("name").value="";
-          document.getElementById("mailer").value="";
-          document.getElementById("subject").value="";
-          document.getElementById("message").value="";
-      }
+              
+
+            params={name:name,subject:subject,email:from,message:message};
+              emailjs.send("service_mer1y3o","template_t8g3b28",params).then(alert("email has been sent"));
+              document.getElementById("name").value="";
+              document.getElementById("mailer").value="";
+              document.getElementById("subject").value="";
+              document.getElementById("message").value="";
+          }
       }
       }
     }
@@ -126,16 +129,8 @@ function scrolledTo(){
     window.pageYOffset -
     document.getElementById("header").offsetHeight;
 
-  window.scrollTo({ top: height, behavior: "instant" });
+  window.scrollTo({ top: height, behavior: "smooth" });
 }
-
-
-
-
-
-
-
-
 
 
 

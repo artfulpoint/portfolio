@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/icons-portfolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="./stylus.css" />
+    <link rel="shortcut icon" href="images/icons-portfolio.png" type="image/x-icon" />
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -53,7 +53,7 @@
               <span class="nav-link inactive" id="link3" onclick="scrolling(this)">Skills</span>
             </li>
             <li>
-              <span class="nav-link inactive" id="link4" onclick="scrolling(this)">Works</span>
+              <span class="nav-link inactive" id="link4" onclick="scrolling(this)">Work</span>
             </li>
             <li>
               <span class="nav-link inactive" id="link5" onclick="scrolling(this)">Contact</span>
@@ -114,7 +114,7 @@
                 individuals who share my enthusiasm for web devlopment.
               </p>
               <span class="btn">
-                <a href="files/resume.docx" download="resume.docx">Download Resume</a>
+                <a href="files/resume.pdf" download="resume.pdf">Download Resume</a>
               </span>
             </div>
           </div>
@@ -127,22 +127,31 @@
             and profiency in Microsoft technologies.
           </p>
           <!-- <img src="images/web-developer.jpg" alt="" height="200px" width="200px" /> -->
-          <img
-            class="skills-image"
-            src="images/html.jpg"
-            title="HTML(HyperText Markup Language)"
-            alt="HTML(HyperText Markup Language)"
-          />
-          <img
-            class="skills-image"
-            src="images/css.png"
-            title="CSS(Cascading Style Sheet)"
-            alt="CSS(Cascading Style Sheet)"
-          />
+          <a
+            href="https://artfulpoint.github.io/HTML-notes/index.html"
+            style="text-decoration: none"
+            ><img
+              class="skills-image"
+              src="images/html.jpg"
+              title="HTML(HyperText Markup Language)"
+              alt="HTML(HyperText Markup Language)"
+            />
+          </a>
+          <a
+            href="https://artfulpoint.github.io/CSS-notes/index.html"
+            style="text-decoration: none"
+          >
+            <img
+              class="skills-image"
+              src="images/css.png"
+              title="CSS(Cascading Style Sheet)"
+              alt="CSS(Cascading Style Sheet)"
+            />
+          </a>
         </div>
         <hr />
         <div id="works" class="section">
-          <h2 class="title">Works</h2>
+          <h2 class="title">Work</h2>
           <ul>
             <li><a href="https://artfulpoint.github.io/HTML-notes/index.html">HTML Notes</a></li>
             <li>
@@ -225,5 +234,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
-
