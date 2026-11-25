@@ -173,15 +173,15 @@ hr {
   text-align: center;
 }
 /******************work*************/
-#works ul {
+#work ul {
   list-style-type: none;
 }
 
-#works a {
+#work a {
   color: black;
 }
 
-#works a:hover {
+#work a:hover {
   color: blue;
 }
 /****************contact***********/
@@ -309,7 +309,7 @@ body:has(.dark) {
   color: white;
 }
 
-.dark #works a {
+.dark #work a {
   color: white;
 }
 
